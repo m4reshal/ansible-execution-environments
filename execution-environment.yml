@@ -2,6 +2,9 @@
 #https://ansible.readthedocs.io/projects/builder/en/stable/definition/
 version: 3
 
+build_arg_defaults:
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: '--ignore-certs'
+
 images:
   base_image:
     name: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest
